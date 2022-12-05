@@ -1,0 +1,36 @@
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.task {
+  width: 500px;
+  border: 1px solid black;
+  padding: 15px;
+  margin-right: 68px;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.img {
+  width: 300px;
+  border: 1px solid lightpink;
+  margin-right: 100px;
+}
+
+.cat {
+  width: 100%;
+}
+
+.city__code {
+  text-align: center;
+}
