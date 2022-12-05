@@ -16,12 +16,14 @@ const cityCodes = [
 function result() {
   var phone = document.getElementById("phone").value;
   var city = document.getElementById("city").value;
-  cityCodes.forEach((element) => {
-    if (element.cityName === city)
-      document.getElementById(
-        "result"
-      ).innerHTML = `${element.cityCode}  ${phone}`;
-  });
-
-  document.getElementById("result").innerHTML = "Такого мітса немає у базі";
+  var index = -1;
+  for (var i = 0; i < cityCodes.length; i++) {
+    if (cityCodes[i].cityName === city) index = i;
+  }
+  if (index === -1)
+    document.getElementById("result").innerHTML = "Такого мітса немає у базі";
+  else
+    document.getElementById(
+      "result"
+    ).innerHTML = `${cityCodes[index].cityCode}${phone}`;
 }

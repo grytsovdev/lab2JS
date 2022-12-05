@@ -23,8 +23,10 @@ header {
 
 .img {
   width: 300px;
+  max-height: 300px;
   border: 1px solid lightpink;
   margin-right: 100px;
+  overflow: hidden;
 }
 
 .cat {
@@ -32,5 +34,48 @@ header {
 }
 
 .city__code {
+  border: 1px solid black;
+  padding: 20px;
   text-align: center;
+  width: 500px;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#result {
+  border: 1px solid green;
+  color: green;
+  min-height: 25px;
+  min-width: 190px;
+  padding: 5px;
+}
+
+#city {
+  border: none;
+
+  text-align: center;
+  border-radius: 5px;
+  height: 40px;
+  margin-right: 16px;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}
+
+#phone {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  height: 40px;
+  margin-right: 16px;
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+}
+
+.submit {
+  background-color: lightgreen;
+  color: green;
+  border: none;
+  border-radius: 5px;
 }
